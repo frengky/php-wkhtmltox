@@ -26,7 +26,7 @@ if ($result) {
 It can also accept stream. See PSR-7 *StreamInterface* and check out [guzzle/psr7](https://github.com/guzzle/psr7):
 ```php
 $htmlSource = Psr7\stream_for('Hello, <strong>World</strong>!');
-$result = PDF::fromHtml($contents)
+$result = PDF::fromHtml($htmlSource)
            ->set('--page-size',  'A4') // the args to wkhtmltopdf
            ->set('--orientation',  'Portrait')
            ->render(function(StreamInterface $output) {
