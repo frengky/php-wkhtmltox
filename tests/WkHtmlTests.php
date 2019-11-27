@@ -40,4 +40,10 @@ final class WkHtmlTests extends TestCase {
                     
         $this->assertFalse($return);
     }
+
+    protected function tearDown(): void {
+        if (file_exists('tests/samples/test-success.pdf')) {
+            unlink('tests/samples/test-success.pdf');
+        }
+    }
 }
