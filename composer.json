@@ -27,5 +27,7 @@
         "psr-4": {
             "Frengky\\WkHtml\\Tests\\": "tests/"
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
